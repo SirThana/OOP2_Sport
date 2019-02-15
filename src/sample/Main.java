@@ -17,7 +17,16 @@ public class Main extends Application {
     }
 
 
+
+
     public static void main(String[] args) {
-        launch(args);
+//        launch(args);
+        Team a = new Team("Team 1");
+        Speler b = new Speler("Jan",15);
+
+        a.voegSpelerToe(b);
+        System.out.println(a.returnLijst());
+
     }
+
 }
