@@ -5,6 +5,7 @@
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
@@ -12,13 +13,11 @@
    <children>
       <TextField fx:id="veld_naam" layoutX="147.0" layoutY="43.0" onAction="#naamVeld" onInputMethodTextChanged="#naamVeld" />
       <Label layoutX="31.0" layoutY="48.0" text="Naam:" />
-      <TextField fx:id="veld_achternaam" layoutX="147.0" layoutY="82.0" onAction="#achternaamVeld" text="Achternaam:" />
+      <TextField fx:id="veld_achternaam" layoutX="147.0" layoutY="82.0" onAction="#achternaamVeld" />
       <Label layoutX="31.0" layoutY="87.0" text="Achternaam:" />
       <Label layoutX="31.0" layoutY="127.0" text="Leeftijd:" />
-      <TextField fx:id="veld_leeftijd" layoutX="147.0" layoutY="122.0" onAction="#leeftijdVeld" text="Leeftijd:" />
-      <Button fx:id="btn_maakAanSpeler" layoutX="147.0" layoutY="205.0" mnemonicParsing="false" onAction="#maakAanSpeler" text="Aanmaken" />
-      <Label fx:id="veld_bsn" layoutX="31.0" layoutY="165.0" onDragDetected="#bsnVeld" text="BSN:" />
-      <TextField fx:id="veld_leeftijd1" layoutX="147.0" layoutY="168.0" onAction="#leeftijdVeld" />
+      <TextField fx:id="veld_leeftijd" layoutX="147.0" layoutY="122.0" onAction="#leeftijdVeld" />
+      <Button fx:id="btn_maakAanSpeler" layoutX="147.0" layoutY="166.0" mnemonicParsing="false" onAction="#maakAanSpeler" text="Aanmaken" />
       <MenuBar maxWidth="-Infinity">
         <menus>
           <Menu mnemonicParsing="false" text="File">
@@ -41,5 +40,6 @@
       <TextField fx:id="veld_teamNaam" layoutX="595.0" layoutY="38.0" onAction="#veldTeamNaam" />
       <Label fx:id="lablel_TeamNaam" layoutX="500.0" layoutY="43.0" onDragDetected="#labelTeamNaam" text="Team naam:" />
       <Button fx:id="btn_maakAanTeam" layoutX="595.0" layoutY="74.0" mnemonicParsing="false" onAction="#maakAanTeam" text="Aanmaken" />
+      <TextArea fx:id="textarea_team" layoutX="539.0" layoutY="127.0" onDragDetected="#textAreaTeam" prefHeight="200.0" prefWidth="200.0" />
    </children>
 </AnchorPane>

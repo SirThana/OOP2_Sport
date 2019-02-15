@@ -2,14 +2,20 @@ package sample.controller;
 
 import java.awt.*;
 
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.*;
+import javafx.scene.control.ListView;
+import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.input.InputMethodEvent;
 import javafx.scene.input.MouseEvent;
 import sample.model.Speler;
 import sample.model.Team;
+
+import javax.swing.*;
+import javax.xml.soap.Text;
 
 
 public class Controller {
@@ -22,6 +28,8 @@ public class Controller {
     private TextField veld_leeftijd;
     @FXML
     private TextField veld_teamNaam;
+    @FXML
+    private TextArea textarea_team;
 
 
     public void naamVeld(InputMethodEvent inputMethodEvent) {
@@ -38,6 +46,17 @@ public class Controller {
     }
 
 
+    public void textVeldObject(MouseEvent mouseEvent) {
+
+
+    }
+
+    public void veldTeamNaam(ActionEvent actionEvent) {
+    }
+
+    public void labelTeamNaam(MouseEvent mouseEvent) {
+    }
+
         public void maakAanSpeler(){
 
         String naam = veld_naam.getText();
@@ -53,21 +72,14 @@ public class Controller {
         public void maakAanTeam(){
         String teamNaam = veld_teamNaam.getText();
         Team b = new Team(teamNaam);
-            System.out.println(b.getTeamNaam());
-
+        System.out.println(b.getTeamNaam());
+        textarea_team.setText(teamNaam);
         }
 
 
-    public void textVeldObject(MouseEvent mouseEvent) {
-
-
+    public void textAreaTeam(ActionEvent actionEvent){
     }
 
-    public void veldTeamNaam(ActionEvent actionEvent) {
-    }
-
-    public void labelTeamNaam(MouseEvent mouseEvent) {
-    }
 }
 
 
