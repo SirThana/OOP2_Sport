@@ -1,13 +1,15 @@
-package sample;
+package sample.model;
 
 public class Speler {
     private String naam;
     private int leeftijd;
+    private String achternaam;
 
 
-    public Speler(String naam, int leeftijd) {
+    public Speler(String naam,String achternaam ,int leeftijd) {
         this.naam = naam;
         this.leeftijd = leeftijd;
+        this.achternaam = achternaam;
     }
 
 
@@ -23,4 +25,7 @@ public class Speler {
     public int getLeeftijd() {
         return leeftijd;
     }
+
+
+
 }

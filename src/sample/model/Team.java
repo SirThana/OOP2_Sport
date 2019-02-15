@@ -1,4 +1,4 @@
-package sample;
+package sample.model;
 
 import java.util.ArrayList;
 
@@ -19,4 +19,7 @@ public class Team {
 
     }
 
+    public String getTeamNaam() {
+        return teamNaam;
+    }
 }
